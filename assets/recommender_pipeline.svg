@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 520" role="img" aria-labelledby="title desc">
+  <title id="title">Recommender-system pipeline</title>
+  <desc id="desc">A recommender-system workflow from events to experimentation and monitoring.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#12233f"/>
+    </linearGradient>
+    <linearGradient id="box" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#172554"/>
+      <stop offset="1" stop-color="#0f766e"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="14" flood-opacity="0.22"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#67e8f9"/>
+    </marker>
+  </defs>
+  <rect width="1120" height="520" rx="28" fill="url(#bg)"/>
+  <g opacity="0.18">
+    <circle cx="1020" cy="75" r="155" fill="#38bdf8"/>
+    <circle cx="140" cy="440" r="135" fill="#2dd4bf"/>
+  </g>
+  <text x="56" y="70" fill="#e2e8f0" font-size="30" font-family="Inter,Arial,sans-serif" font-weight="700">Large-scale recommendation workflow</text>
+  <text x="56" y="104" fill="#94a3b8" font-size="16" font-family="Inter,Arial,sans-serif">Feature, ranking, serving, and online experimentation loop.</text>
+
+  <g font-family="Inter,Arial,sans-serif" filter="url(#shadow)">
+    <g transform="translate(62 170)">
+      <rect width="180" height="110" rx="18" fill="url(#box)" stroke="#5eead4" stroke-opacity="0.45"/>
+      <text x="90" y="43" text-anchor="middle" fill="#f8fafc" font-size="17" font-weight="700">User events</text>
+      <text x="90" y="72" text-anchor="middle" fill="#cbd5e1" font-size="13">clicks · entries ·</text>
+      <text x="90" y="91" text-anchor="middle" fill="#cbd5e1" font-size="13">historical behavior</text>
+    </g>
+    <g transform="translate(286 170)">
+      <rect width="180" height="110" rx="18" fill="url(#box)" stroke="#5eead4" stroke-opacity="0.45"/>
+      <text x="90" y="43" text-anchor="middle" fill="#f8fafc" font-size="17" font-weight="700">Feature jobs</text>
+      <text x="90" y="72" text-anchor="middle" fill="#cbd5e1" font-size="13">batch + streaming</text>
+      <text x="90" y="91" text-anchor="middle" fill="#cbd5e1" font-size="13">feature pipelines</text>
+    </g>
+    <g transform="translate(510 170)">
+      <rect width="180" height="110" rx="18" fill="url(#box)" stroke="#5eead4" stroke-opacity="0.45"/>
+      <text x="90" y="43" text-anchor="middle" fill="#f8fafc" font-size="17" font-weight="700">Candidates</text>
+      <text x="90" y="72" text-anchor="middle" fill="#cbd5e1" font-size="13">retrieve eligible</text>
+      <text x="90" y="91" text-anchor="middle" fill="#cbd5e1" font-size="13">items / contests</text>
+    </g>
+    <g transform="translate(734 170)">
+      <rect width="180" height="110" rx="18" fill="url(#box)" stroke="#5eead4" stroke-opacity="0.45"/>
+      <text x="90" y="43" text-anchor="middle" fill="#f8fafc" font-size="17" font-weight="700">Ranking</text>
+      <text x="90" y="72" text-anchor="middle" fill="#cbd5e1" font-size="13">score · order ·</text>
+      <text x="90" y="91" text-anchor="middle" fill="#cbd5e1" font-size="13">personalize</text>
+    </g>
+    <g transform="translate(958 170)">
+      <rect width="100" height="110" rx="18" fill="#083344" stroke="#5eead4" stroke-opacity="0.45"/>
+      <text x="50" y="43" text-anchor="middle" fill="#f8fafc" font-size="17" font-weight="700">Top-K</text>
+      <text x="50" y="72" text-anchor="middle" fill="#cbd5e1" font-size="13">recommend</text>
+      <text x="50" y="91" text-anchor="middle" fill="#cbd5e1" font-size="13">serve</text>
+    </g>
+  </g>
+
+  <g stroke="#67e8f9" stroke-width="3" marker-end="url(#arrow)" opacity="0.9">
+    <line x1="250" y1="225" x2="276" y2="225"/>
+    <line x1="474" y1="225" x2="500" y2="225"/>
+    <line x1="698" y1="225" x2="724" y2="225"/>
+    <line x1="922" y1="225" x2="948" y2="225"/>
+  </g>
+
+  <g font-family="Inter,Arial,sans-serif">
+    <path d="M 1010 305 C 1010 395 784 410 760 310" fill="none" stroke="#a78bfa" stroke-width="3" stroke-dasharray="10 8" marker-end="url(#arrow)"/>
+    <path d="M 820 335 C 650 435 330 430 305 305" fill="none" stroke="#a78bfa" stroke-width="3" stroke-dasharray="10 8" marker-end="url(#arrow)"/>
+    <rect x="400" y="372" width="340" height="72" rx="18" fill="#111827" stroke="#a78bfa" stroke-opacity="0.55"/>
+    <text x="570" y="402" text-anchor="middle" fill="#f8fafc" font-size="16" font-weight="700">A/B testing + monitoring loop</text>
+    <text x="570" y="426" text-anchor="middle" fill="#cbd5e1" font-size="13">offline checks → online experiments → iteration</text>
+  </g>
+</svg>

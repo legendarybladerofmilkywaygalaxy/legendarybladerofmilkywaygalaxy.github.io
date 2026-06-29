@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 420" role="img" aria-labelledby="title desc">
+  <title id="title">Online experimentation workflow</title>
+  <desc id="desc">An online experimentation workflow for evaluating recommendation changes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#111827"/><stop offset="1" stop-color="#1e1b4b"/></linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#c4b5fd"/></marker>
+    <filter id="shadow"><feDropShadow dx="0" dy="14" stdDeviation="12" flood-opacity=".22"/></filter>
+  </defs>
+  <rect width="1120" height="420" rx="28" fill="url(#bg)"/>
+  <text x="56" y="68" fill="#e5e7eb" font-family="Inter,Arial,sans-serif" font-weight="700" font-size="30">Online experimentation lifecycle</text>
+  <text x="56" y="102" fill="#a5b4fc" font-family="Inter,Arial,sans-serif" font-size="16">Hypothesis, offline evaluation, traffic split, analysis, and launch decision.</text>
+  <g filter="url(#shadow)" font-family="Inter,Arial,sans-serif">
+    <g transform="translate(70,172)">
+      <rect width="160" height="94" rx="18" fill="#312e81" stroke="#a5b4fc" stroke-opacity=".5"/>
+      <text x="80" y="39" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">Hypothesis</text>
+      <text x="80" y="66" text-anchor="middle" fill="#ddd6fe" font-size="12">new ranking idea</text>
+    </g>
+    <g transform="translate(284,172)">
+      <rect width="160" height="94" rx="18" fill="#312e81" stroke="#a5b4fc" stroke-opacity=".5"/>
+      <text x="80" y="39" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">Offline eval</text>
+      <text x="80" y="66" text-anchor="middle" fill="#ddd6fe" font-size="12">guardrails + replay</text>
+    </g>
+    <g transform="translate(498,172)">
+      <rect width="160" height="94" rx="18" fill="#312e81" stroke="#a5b4fc" stroke-opacity=".5"/>
+      <text x="80" y="39" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">Traffic split</text>
+      <text x="80" y="66" text-anchor="middle" fill="#ddd6fe" font-size="12">control / treatment</text>
+    </g>
+    <g transform="translate(712,172)">
+      <rect width="160" height="94" rx="18" fill="#312e81" stroke="#a5b4fc" stroke-opacity=".5"/>
+      <text x="80" y="39" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">Analyze</text>
+      <text x="80" y="66" text-anchor="middle" fill="#ddd6fe" font-size="12">lift + confidence</text>
+    </g>
+    <g transform="translate(926,172)">
+      <rect width="130" height="94" rx="18" fill="#4c1d95" stroke="#a5b4fc" stroke-opacity=".5"/>
+      <text x="65" y="39" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">Decision</text>
+      <text x="65" y="66" text-anchor="middle" fill="#ddd6fe" font-size="12">launch / iterate</text>
+    </g>
+  </g>
+  <g stroke="#c4b5fd" stroke-width="3" marker-end="url(#arrow)">
+    <line x1="240" y1="219" x2="274" y2="219"/>
+    <line x1="454" y1="219" x2="488" y2="219"/>
+    <line x1="668" y1="219" x2="702" y2="219"/>
+    <line x1="882" y1="219" x2="916" y2="219"/>
+  </g>
+  <text x="560" y="345" text-anchor="middle" fill="#cbd5e1" font-family="Inter,Arial,sans-serif" font-size="14">Measure guardrails, estimate lift, and iterate from online feedback.</text>
+</svg>
